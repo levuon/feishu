@@ -11,7 +11,7 @@ const calculate = () => {
     if (appid.value === "" || appsecret.value === "") {
         redirect_url.value = "请填写ID和Secret"
     }else {
-        redirect_url.value = `https://levuon.github.io/feishu-backup/#/backup/${appid.value}/${appsecret.value}`
+        redirect_url.value = `https://levuon.github.io/feishu/#/backup/${appid.value}/${appsecret.value}`
         backup_url.value = `https://open.feishu.cn/open-apis/authen/v1/index?redirect_uri=${encodeURIComponent(redirect_url.value)}&app_id=${appid.value}`
     }
 }
